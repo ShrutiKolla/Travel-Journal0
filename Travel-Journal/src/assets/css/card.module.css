@@ -2,10 +2,14 @@ card {
     display: flex;
     gap: 19px;
     align-items: center;
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 }
+
 .image {
     width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .info {
@@ -52,4 +56,22 @@ card {
     font-size: 10.24px;
     line-height: 150%;
     margin-bottom: 0;
+}
+
+.hr {
+    margin: 18px 0;
+    width: 100%;
+}
+
+@media(max-width:494px) {
+    .image {
+        width: 110.12px;
+        height: 148px;
+        /* object-fit: cover; */
+        /* border-radius: 5px; */
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
 }
